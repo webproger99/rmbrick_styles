@@ -1,0 +1,55 @@
+$checkbox-width: 1.1em;
+
+.checkbox {
+    &-dotted {
+        padding-left: $checkbox-width + .6em;
+        position: relative;
+        display: block;
+
+        & input[type="checkbox"] + .checkbox-control {
+            width: $checkbox-width + 0.05;
+            height: $checkbox-width;
+            border: 2px solid #eee;
+            position: absolute;
+            left: 0;
+            //            top: 0;
+            top: 50%;
+            margin-top: -9px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background: #ff9900;
+                left: 50%;
+                right: 50%;
+                top: 50%;
+                bottom: 50%;
+                transition: .3s;
+            }
+        }
+
+        & input[type="checkbox"]:checked + .checkbox-control {
+            &:before {
+                left: 15%;
+                right: 10%;
+                top: 10%;
+                bottom: 10%;
+
+
+                @media (max-width: 768px) {
+                    left: 10%;
+                    right: 7%;
+                    top: 8%;
+                    bottom: 8%;
+                }
+            }
+
+
+        }
+
+
+        input {
+            display: none;
+        }
+    }
+}

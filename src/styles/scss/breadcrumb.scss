@@ -1,0 +1,38 @@
+.breadcrumb {
+    background-color: #fff;
+    padding: 1.5em 1.5em 0.7em 0;
+
+
+    @media(max-width: 767px) {
+        padding: 1em 0;
+        font-size: 0.6em;
+    }
+
+
+    &-item {
+        font-size: 0.9em;
+
+        a {
+            color: #000;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+
+
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: '›' !important;
+        font-size: 1.5em;
+        line-height: 1;
+
+
+        @media(max-width: 767px) {
+            line-height: 0.9;
+        }
+    }
+
+}

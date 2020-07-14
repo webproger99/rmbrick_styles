@@ -1,0 +1,42 @@
+.tovar {
+
+    &__price {
+        font-size: 1.6em;
+        font-weight: 700;
+        margin: 1em 0;
+        
+        @media (max-width: 568px){
+            margin: 0.5em 0 1em;
+        }
+    }
+
+    &__checkbox {
+        position: relative;
+        font-weight: 600;
+        padding-left: 2em;
+        font-size: 0.9em;
+        margin: 2em 0;
+
+
+        &::before {
+            content: '';
+            background-image: url(/img/checkbox.svg);
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        @media (max-width: 568px){
+            margin: 1em 0;
+        }
+    }
+    
+    &__volume{
+        font-weight: 600;
+    }
+}

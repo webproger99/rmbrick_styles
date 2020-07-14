@@ -1,0 +1,8 @@
+.product_top{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    
+    @media (max-width: 568px){
+                margin-bottom: 1em;
+            }
+}

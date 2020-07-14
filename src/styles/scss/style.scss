@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf");
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Black.ttf");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+@import "header";
+@import "breadcrumb";
+@import "h1";
+@import "navbar";
+@import "slider";
+@import "about";
+@import "button";
+@import "body";
+@import "menu-cart";
+@import "product_top";
+@import "product-cart";
+@import "section-cart";
+@import "section";
+@import "section-tags";
+@import "advantages";
+@import "pagination";
+@import "title";
+@import "form";
+@import "footer";
+@import "checkbox";
+@import "rm-form-group";
+@import "fotorama";
+@import "tovar__gallery";
+@import "tovar";
+@import "filter";

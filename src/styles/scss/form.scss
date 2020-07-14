@@ -1,0 +1,50 @@
+.form {
+    background-color: #e7e7e7;
+    margin-bottom: 5em;
+    margin-top: 6em;
+    
+    
+    @media (max-width: 767px){
+        margin-top: 2.5em;
+        
+    }
+
+    &__label {
+        font-size: 1.4em;
+        margin-bottom: 0;
+
+        @media (max-width: 475px) {
+            font-size: 1.1em;
+        }
+        @media (min-width: 767px) and (max-width: 991px) {
+            font-size: 0.9em;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.65em 0.3em;
+        border: none;
+        font-size: 1.4em;
+        
+        @media (min-width: 767px) and (max-width: 991px) {
+            font-size: 0.9em;
+            padding: 0.65 0.2em;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 1.2em;
+        }
+        
+    }
+
+    &__checkbox_label {
+
+        @media (max-width: 991px) {
+            display: inline;
+            font-size: 0.8em;
+        }
+        
+
+    }
+
+}

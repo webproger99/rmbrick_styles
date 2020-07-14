@@ -1,0 +1,54 @@
+.tovar__gallery{
+    
+    .owl-nav{
+        font-size: 6em;
+        line-height: 0.1;
+        
+        
+        @media(max-width: 568px){
+            font-size: 4em;
+            
+        }
+
+    }
+    .owl-next{
+        position: absolute;
+        right: -50px;
+        top: 50%;
+        margin-top: -10px !important;
+        
+        &:hover,
+        &:focus{
+            background: #fff !important;
+            color: #ff9900 !important;
+            outline: none !important;
+        }
+        
+        @media(max-width: 568px){
+            right: -30px;
+            
+        }
+        
+    }
+    .owl-prev{
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        margin-top: -10px !important;
+        
+        &:hover,
+        &:focus{
+            background: #fff !important;
+            color: #ff9900 !important;
+            outline: none !important;
+        }
+        
+        @media(max-width: 568px){
+            left: -30px;
+            
+        }
+    }
+    .owl-dots{
+        display: none;
+    }
+}

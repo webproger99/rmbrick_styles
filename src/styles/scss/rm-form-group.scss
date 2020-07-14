@@ -1,0 +1,28 @@
+.rm-form-group {
+    &__items {}
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: .5em;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 0.5em;
+        
+        &::after {
+            content: '';
+            background-image: url(/img/arrow.png);
+            width: 12px;
+            height: 7px;
+            position: absolute;
+            right: -20px;
+            top: 10px;
+
+        }
+        
+        &_tovar{
+            margin-top: 0;
+        }
+    }
+    
+}

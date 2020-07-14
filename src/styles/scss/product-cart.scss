@@ -1,0 +1,60 @@
+.product-cart {
+    background: #e6e6e6;
+    display: block;
+    transition: 0.2s ease;
+    padding: 1em 1.5em 1.5em;
+    height: 100%;
+
+    @media (max-width: 991px) {
+        margin-bottom: 2em;
+        height: auto;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+        text-decoration: none;
+    }
+
+    &__title {
+        color: #000;
+        font-weight: 600;
+        font-size: 1.3em;
+
+        @media (max-width: 767px) {
+            font-size: 1em;
+        }
+    }
+
+    &__price {
+        font-size: 1.7em;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+        margin: 0.5em 0;
+
+        @media (max-width: 767px) {
+            font-size: 1.2em;
+        }
+        @media (min-width: 991px) and (max-width: 1200px) {
+                font-size: 1.3em;
+            }
+    }
+
+    &__img {
+        text-align: center;
+
+        img {
+            max-height: 228px;
+
+            @media (max-width: 767px) {
+                max-height: 158px;
+            }
+            @media (min-width: 991px) and (max-width: 1200px) {
+                max-height: 200px;
+            }
+        }
+    }
+
+}

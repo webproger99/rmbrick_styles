@@ -1,0 +1,120 @@
+.header {
+
+
+    &__contacts_phone {
+        font-weight: 600;
+        font-size: 1.4em;
+        color: #000;
+
+        &:hover {
+            color: #ff9600;
+            text-decoration: none;
+        }
+    }
+
+    &__search {
+        position: relative;
+        border: 2px solid #ccc;
+        padding: 0.4em;
+        padding-left: 3em;
+        width: 80%;
+        margin-left: 10%;
+
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-left: 0;
+            font-size: 0.8em;
+        }
+        @media (min-width: 767px) and (max-width: 991px){
+            width: 80%;
+            margin-left: 0;
+            font-size: 1em;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: #999;
+        }
+
+        &_label {
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                left: 45px;
+                z-index: 1;
+                bottom: 0;
+                display: block;
+                background-image: url(/img/search.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                @media (max-width: 767px) {
+                    width: 16px;
+                    bottom: -7px;
+                    left: 10px;
+                }
+                @media (min-width: 767px) and (max-width: 991px){
+                    left: 15px;
+                }
+            }
+
+
+
+        }
+
+        &:hover &_label::before,
+        &:focus &_label::before {
+            display: none !important;
+        }
+    }
+
+    &__cart {
+        width: 45px;
+        
+        @media (max-width: 475px) {
+                    width: 32px;
+                }
+    }
+
+    &__contacts {
+        align-self: flex-end;
+        position: relative;
+        top: 5px;
+
+        @media (max-width: 475px) {
+            font-size: 0.7em;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 0.9em;
+        }
+    }
+
+    &__contacts_mail {
+        font-size: 1.4em;
+        font-weight: 400;
+        color: #000;
+
+        &:hover {
+            color: #ff9600;
+            text-decoration: none;
+        }
+    }
+
+    &__search {
+        align-self: flex-end;
+        
+        
+        
+    }
+
+    &__cart {
+        align-self: flex-end;
+    }
+}
